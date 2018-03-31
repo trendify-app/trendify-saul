@@ -1,10 +1,22 @@
+const trends = require('google-trends-api');
+
 /**
-* A basic Hello World function
-* @param {string} name Who you're saying hello to
+* Utilize trends api to determine keyword ranking
+* @param {string} keyword String to query against
 * @returns {string}
 */
-module.exports = (name = 'world', context, callback) => {
+module.exports = (keyword, context, callback) => {
+  const startTime = new Date();
+  startTime.setMonth(startTime.getMonth() - 1);
 
-  callback(null, `hello ${name}`);
-
+  trends.interestOverTime({
+    keyword,
+    startTime,
+    granularTimeResolution: true
+  }, (error, result) => {
+    if (error) {
+      return callback(error);
+    }
+    return callback(null, result);
+  })
 };
