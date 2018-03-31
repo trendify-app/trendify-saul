@@ -1,0 +1,21 @@
+{
+  "name": "lib-google-trends-api",
+  "version": "0.0.0",
+  "description": "",
+  "author": "trendify <seenarowhani95@gmail.com>",
+  "main": "functions/__main__.js",
+  "dependencies": {
+    "google-trends-api": "^4.6.1"
+  },
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "trendify/lib-google-trends-api",
+    "timeout": 10000,
+    "publish": true,
+    "personalize": {
+      "keys": [],
+      "user": []
+    }
+  }
+}
