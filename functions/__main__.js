@@ -2,7 +2,7 @@ const trends = require('google-trends-api');
 
 /**
 * Utilize trends api to determine keyword ranking
-* @param {string} keyword String to query against
+* @param {array} keyword List of keywords to query
 * @returns {string}
 */
 module.exports = (keyword, context, callback) => {
