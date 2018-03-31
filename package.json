@@ -1,5 +1,5 @@
 {
-  "name": "lib-google-trends-api",
+  "name": "trendify-saul",
   "version": "0.0.0",
   "description": "",
   "author": "trendify <seenarowhani95@gmail.com>",
@@ -10,7 +10,7 @@
   "private": true,
   "stdlib": {
     "build": "faaslang",
-    "name": "trendify/lib-google-trends-api",
+    "name": "trendify/trendify-saul",
     "timeout": 10000,
     "publish": true,
     "personalize": {
