@@ -11,8 +11,7 @@ module.exports = (keyword, context, callback) => {
 
   trends.interestOverTime({
     keyword,
-    startTime,
-    granularTimeResolution: true
+    startTime
   }, (error, result) => {
     if (error) {
       return callback(error);
