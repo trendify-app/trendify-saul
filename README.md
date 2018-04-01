@@ -1,5 +1,8 @@
 # trendify-saul
 
+Saul is a endpoint hosted using [stdlib/lib-node](https://github.com/stdlib/lib-node) that queries Google Trends Api.
+
+
 ## Usage
 
 ```
